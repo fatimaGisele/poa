@@ -8,6 +8,7 @@ public class SaludadorService implements ISaludadorService{
     @Override
     public String Saludar(String p, String frase) {
         String s= frase+" "+p;
+        System.out.println(s);
         return s;
     }
 
