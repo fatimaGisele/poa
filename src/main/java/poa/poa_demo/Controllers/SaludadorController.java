@@ -23,4 +23,9 @@ public class SaludadorController {
         return ResponseEntity.ok(Collections.singletonMap("saludo", service.Saludar("miamor", "pedazo de gil")));
     }
     
+    @GetMapping("/error")
+    public ResponseEntity<?> saludadorError() {
+
+        return ResponseEntity.ok(Collections.singletonMap("saludo", service.SaludarError("miamor", "pedazo de gil")));
+    }
 }

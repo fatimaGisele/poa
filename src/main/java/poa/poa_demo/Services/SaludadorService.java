@@ -12,4 +12,9 @@ public class SaludadorService implements ISaludadorService{
         return s;
     }
 
+    @Override
+    public String SaludarError(String p, String frase) {
+        throw new RuntimeException("error");
+    }
+
 }
